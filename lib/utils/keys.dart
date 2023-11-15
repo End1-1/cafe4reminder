@@ -8,6 +8,7 @@ const pkSession = 'pkSession';
 const pkUserId = 'pkUserId';
 const pkPassword = 'pkPassword';
 const pkLogin = 'pkLogin';
+const pkServerAddress = 'pkServerAddress';
 
 //NETWORK KEYS
 const hrFail = 0;

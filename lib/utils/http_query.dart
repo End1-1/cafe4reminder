@@ -1,7 +1,7 @@
 import 'dart:convert';
+import 'package:cafe5_reminder/utils/prefs.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
-import 'package:magnit_crm/utils/prefs.dart';
 
 import 'keys.dart';
 
@@ -16,8 +16,8 @@ class HttpQuery {
       var response = await http
           .post(
               Uri.https(
-                  '${prefs.getString('serveraddress')}',
-                  '/remotedb'),
+                  '${prefs.getString(pkServerAddress)}:10002',
+                  '/jzreminder'),
               headers: {
                 'Content-Type': 'application/json',
                 //'Content-Length': '${utf8.encode(strBody).length}'
